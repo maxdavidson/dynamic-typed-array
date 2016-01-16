@@ -1,0 +1,13 @@
+{
+  "env": {
+    "development": {
+      "presets": ["es2015-rollup"],
+      "plugins": [
+        ["transform-es2015-classes", { "loose": true }]
+      ] 
+    },
+    "test": {
+      "presets": ["es2015"]
+    }
+  }
+}
