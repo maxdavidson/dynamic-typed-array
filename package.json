@@ -29,7 +29,9 @@
     "build:dts": "node -e \"require('dts-bundle').bundle({ name: 'dynamic-typed-array', main: 'dist-es2015/index.d.ts', out: '../dist/dynamic-typed-array.d.ts' })\"",
     "build:umd": "rollup -c rollup.config.js",
     "build:fix-sourcemaps": "sorcery -i dist/dynamic-typed-array.js",
-    "build:minify": "cd dist && uglifyjs dynamic-typed-array.js --in-source-map dynamic-typed-array.js.map --compress --mangle --mangle-props --mangle-regex='/^_/' --screw-ie8 --source-map dynamic-typed-array.min.js.map --output dynamic-typed-array.min.js"
+    "build:minify": "cd dist && uglifyjs dynamic-typed-array.js --in-source-map dynamic-typed-array.js.map --compress --mangle --mangle-props --mangle-regex='/^_/' --screw-ie8 --source-map dynamic-typed-array.min.js.map --output dynamic-typed-array.min.js",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
