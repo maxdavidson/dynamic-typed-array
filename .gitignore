@@ -3,3 +3,4 @@ node_modules
 dist
 dist-es2015
 coverage
+npm-debug.log
