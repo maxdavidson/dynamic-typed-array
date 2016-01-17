@@ -1,10 +1,11 @@
 dynamic-typed-array
 ===================
 
-[![Build Status](https://travis-ci.org/maxdavidson/dynamic-typed-array.svg?branch=master)](https://travis-ci.org/maxdavidson/dynamic-typed-array)
-[![Coverage Status](https://coveralls.io/repos/maxdavidson/dynamic-typed-array/badge.svg?branch=master&service=github)](https://coveralls.io/github/maxdavidson/dynamic-typed-array?branch=master)
-[![Dependency Status](https://david-dm.org/maxdavidson/dynamic-typed-array.svg)](https://david-dm.org/maxdavidson/dynamic-typed-array)
-[![devDependency Status](https://david-dm.org/maxdavidson/dynamic-typed-array/dev-status.svg)](https://david-dm.org/maxdavidson/dynamic-typed-array#info=devDependencies)
+[![NPM](https://img.shields.io/npm/v/dynamic-typed-array.svg)](https://www.npmjs.com/package/dynamic-typed-array)
+[![Build Status](https://img.shields.io/travis/maxdavidson/dynamic-typed-array/master.svg)](https://travis-ci.org/maxdavidson/dynamic-typed-array)
+[![Coverage Status](https://img.shields.io/coveralls/maxdavidson/dynamic-typed-array/master.svg)](https://coveralls.io/github/maxdavidson/dynamic-typed-array?branch=master)
+[![Dependency Status](https://img.shields.io/david/maxdavidson/dynamic-typed-array.svg)](https://david-dm.org/maxdavidson/dynamic-typed-array)
+[![devDependency Status](https://img.shields.io/david/dev/maxdavidson/dynamic-typed-array.svg)](https://david-dm.org/maxdavidson/dynamic-typed-array#info=devDependencies)
 
 https://en.wikipedia.org/wiki/Dynamic_array
 
