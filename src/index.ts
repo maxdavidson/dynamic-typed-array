@@ -168,7 +168,7 @@ export default class DynamicTypedArray<T extends TypedArray> {
     
     const byteLength = this._constructor.BYTES_PER_ELEMENT * capacity;
     
-    let buffer = (this._array === undefined) 
+    const buffer = (this._array === undefined) 
       ? this._allocator(byteLength) 
       : this._reallocator(this._array.buffer, byteLength, this._allocator, this._deallocator);
     
