@@ -1,5 +1,5 @@
 // Tiny string-based Symbol polyfill
-/* istanbul ignore if  */
+/* istanbul ignore next */
 if (typeof Symbol !== 'function') {
   const _symbol: any = function Symbol() {
     return Math.random().toString(16).slice(2);

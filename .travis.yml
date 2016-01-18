@@ -1,10 +1,13 @@
 language: node_js
 node_js:
-  - 0.10
-  - 0.12
-  - 4.2
+  - '0.10'
+  - '0.12'
+  - '4.2'
   - stable
+before_install:
+  - if [[ $(npm --version) == 1* ]]; then npm install -g npm@latest-2; fi
+  - if [[ $(npm --version) == 2* ]]; then npm install -g npm@latest; fi
 script:
   - npm run test:coverage
 after_success: 
-  - npm run test:upload-coveralls
+  - if [[ $(node --version) == v4* ]]; then cat coverage/lcov.info | $(npm bin)/coveralls; fi
