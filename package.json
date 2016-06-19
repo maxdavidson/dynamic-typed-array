@@ -51,7 +51,7 @@
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
     "coveralls": "^2.11.6",
-    "dts-bundle": "^0.4.2",
+    "dts-bundle": "0.4.2",
     "istanbul": "1.0.0-alpha.2",
     "mocha": "^2.3.4",
     "rimraf": "^2.5.0",
