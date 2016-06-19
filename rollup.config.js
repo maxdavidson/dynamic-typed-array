@@ -1,4 +1,5 @@
 import babel from 'rollup-plugin-babel';
+import sourcemaps from 'rollup-plugin-sourcemaps';
 
 export default {
   entry: 'dist-es2015/index.js',
@@ -6,7 +7,8 @@ export default {
   moduleId: 'dynamic-typed-array',
   sourceMap: true,
   plugins: [
-    babel()
+    babel(),
+    sourcemaps()
   ],
   targets: [
     { dest: 'dist/dynamic-typed-array.js', format: 'umd' },
