@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2015",
     "module": "es2015",
-    "outDir": "dist-es2015",
+    "outDir": "es2015",
     "sourceMap": true,
     "declaration": true,
     "moduleResolution": "node",
@@ -13,6 +13,6 @@
   "exclude": [
     "node_modules",
     "dist",
-    "dist-es2015"
+    "es2015"
   ]
 }

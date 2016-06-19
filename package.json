@@ -10,14 +10,14 @@
   },
   "main": "dist/dynamic-typed-array.js",
   "jsnext:main": "dist/dynamic-typed-array.es.js",
-  "typings": "dist-es2015/index.d.ts",
+  "typings": "es2015/index.d.ts",
   "scripts": {
     "test": "npm run build && npm run test:quick",
     "test:coverage": "npm run build && npm run test:quick-coverage",
     "test:quick": "mocha",
     "test:quick-coverage": "istanbul cover _mocha --report lcov",
     "prepublish": "npm run build",
-    "prebuild": "rimraf dist dist-es2015",
+    "prebuild": "rimraf dist es2015",
     "build": "tsc && rollup -c",
     "preversion": "npm test",
     "postversion": "git push && git push --tags && npm publish"
@@ -28,7 +28,7 @@
   },
   "files": [
     "dist",
-    "dist-es2015",
+    "es2015",
     "src"
   ],
   "keywords": [

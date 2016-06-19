@@ -2,7 +2,7 @@ import babel from 'rollup-plugin-babel';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 
 export default {
-  entry: 'dist-es2015/index.js',
+  entry: 'es2015/index.js',
   moduleName: 'DynamicTypedArray',
   moduleId: 'dynamic-typed-array',
   sourceMap: true,
