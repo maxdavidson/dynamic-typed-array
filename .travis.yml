@@ -1,11 +1,6 @@
 language: node_js
 node_js:
-  - '0.10'
-  - '0.12'
-  - '4.2'
-  - stable
-before_install:
-  - if [[ $(npm --version) == 1* ]]; then npm install -g npm@latest-2; fi
-  - if [[ $(npm --version) == 2* ]]; then npm install -g npm@latest; fi
+  - 4
+  - node
 after_success:
   - if [[ $(node --version) == v4* ]]; then npm run test:coveralls; fi

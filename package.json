@@ -4,9 +4,8 @@
   "description": "Dynamically growing typed arrays",
   "author": "Max Davidson <davidsonmax@gmail.com>",
   "engines": {
-    "node": ">=0.10",
-    "iojs": ">=1.0.0",
-    "npm": ">=3.0.0"
+    "node": ">=4.4.5",
+    "npm": ">=2.15.5"
   },
   "main": "dist/dynamic-typed-array.js",
   "jsnext:main": "dist/dynamic-typed-array.es.js",
