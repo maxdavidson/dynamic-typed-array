@@ -12,12 +12,11 @@
   "jsnext:main": "dist/dynamic-typed-array.es.js",
   "typings": "es2015/index.d.ts",
   "scripts": {
-    "test": "npm run build && npm run test:quick",
-    "test:coverage": "npm run build && npm run test:quick-coverage",
-    "test:quick": "mocha",
-    "test:quick-coverage": "istanbul cover _mocha --report lcov",
+    "pretest": "npm run build",
+    "test": "istanbul cover _mocha --report=lcov",
+    "test:coveralls": "cat coverage/lcov.info | coveralls",
     "prepublish": "npm run build",
-    "prebuild": "rimraf dist es2015",
+    "prebuild": "rimraf dist es2015 coverage",
     "build": "tsc && rollup -c",
     "preversion": "npm test",
     "postversion": "git push && git push --tags && npm publish"
