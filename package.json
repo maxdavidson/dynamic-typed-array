@@ -9,7 +9,7 @@
     "npm": ">=3.0.0"
   },
   "main": "dist/dynamic-typed-array.js",
-  "jsnext:main": "dist-es2015/index.js",
+  "jsnext:main": "dist/dynamic-typed-array.es.js",
   "typescript": {
     "main": "src/index.ts",
     "definition": "dist/dynamic-typed-array.d.ts"
