@@ -10,20 +10,15 @@
   },
   "main": "dist/dynamic-typed-array.js",
   "jsnext:main": "dist/dynamic-typed-array.es.js",
-  "typescript": {
-    "main": "src/index.ts",
-    "definition": "dist/dynamic-typed-array.d.ts"
-  },
-  "typings": "dist/dynamic-typed-array.d.ts",
+  "typings": "dist-es2015/index.d.ts",
   "scripts": {
     "test": "npm run build && npm run test:quick",
     "test:coverage": "npm run build && npm run test:quick-coverage",
     "test:quick": "mocha",
     "test:quick-coverage": "istanbul cover _mocha --report lcov",
     "prepublish": "npm run build",
-    "build": "rimraf dist dist-es2015 && npm run build:es2015 && npm run build:dts && npm run build:umd && npm run build:fix-sourcemaps && npm run build:minify",
+    "build": "rimraf dist dist-es2015 && npm run build:es2015 && npm run build:umd && npm run build:fix-sourcemaps && npm run build:minify",
     "build:es2015": "tsc",
-    "build:dts": "dts-bundle --name dynamic-typed-array --main dist-es2015/index.d.ts --out ../dist/dynamic-typed-array.d.ts",
     "build:umd": "rollup -c rollup.config.js",
     "build:fix-sourcemaps": "sorcery -i dist/dynamic-typed-array.js",
     "build:minify": "cd dist && uglifyjs dynamic-typed-array.js --in-source-map dynamic-typed-array.js.map --compress --mangle --mangle-props --mangle-regex='/^_/' --screw-ie8 --source-map dynamic-typed-array.min.js.map --output dynamic-typed-array.min.js",
@@ -51,7 +46,6 @@
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
     "coveralls": "^2.11.6",
-    "dts-bundle": "0.4.2",
     "istanbul": "1.0.0-alpha.2",
     "mocha": "^2.3.4",
     "rimraf": "^2.5.0",
