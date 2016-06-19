@@ -17,9 +17,8 @@
     "test:quick": "mocha",
     "test:quick-coverage": "istanbul cover _mocha --report lcov",
     "prepublish": "npm run build",
-    "build": "rimraf dist dist-es2015 && npm run build:es2015 && npm run build:umd",
-    "build:es2015": "tsc",
-    "build:umd": "rollup -c rollup.config.js",
+    "prebuild": "rimraf dist dist-es2015",
+    "build": "tsc && rollup -c",
     "preversion": "npm test",
     "postversion": "git push && git push --tags && npm publish"
   },
