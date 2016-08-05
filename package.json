@@ -39,7 +39,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.9.1",
+    "babel-core": "^6.13.1",
     "babel-preset-es2015-rollup": "^1.1.1",
     "coveralls": "^2.11.6",
     "istanbul": "1.0.0-alpha.2",
