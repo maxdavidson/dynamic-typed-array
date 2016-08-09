@@ -1,6 +1,6 @@
 {
   "name": "dynamic-typed-array",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Dynamically growing typed arrays",
   "author": "Max Davidson <davidsonmax@gmail.com>",
   "engines": {
