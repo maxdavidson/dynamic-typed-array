@@ -5,7 +5,7 @@ dynamic-typed-array
 [![Build Status](https://img.shields.io/travis/maxdavidson/dynamic-typed-array/master.svg)](https://travis-ci.org/maxdavidson/dynamic-typed-array)
 [![Coverage Status](https://img.shields.io/coveralls/maxdavidson/dynamic-typed-array/master.svg)](https://coveralls.io/github/maxdavidson/dynamic-typed-array?branch=master)
 [![Dependency Status](https://img.shields.io/david/maxdavidson/dynamic-typed-array.svg)](https://david-dm.org/maxdavidson/dynamic-typed-array)
-[![devDependency Status](https://img.shields.io/david/dev/maxdavidson/dynamic-typed-array.svg)](https://david-dm.org/maxdavidson/dynamic-typed-array#info=devDependencies)
+[![devDependency Status](https://img.shields.io/david/dev/maxdavidson/dynamic-typed-array.svg)](https://david-dm.org/maxdavidson/dynamic-typed-array?type=dev)
 
 https://en.wikipedia.org/wiki/Dynamic_array
 
