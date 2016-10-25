@@ -1,6 +1,11 @@
 language: node_js
 node_js:
   - 4
-  - node
+  - 5
+  - 6
+  - 7
+cache:
+  directories:
+    - node_modules
 after_success:
-  - if [[ $(node --version) == v4* ]]; then npm run test:coveralls; fi
+  - npm run coveralls

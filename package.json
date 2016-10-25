@@ -13,7 +13,7 @@
   "scripts": {
     "pretest": "npm run build",
     "test": "nyc --reporter=text --reporter=html _mocha",
-    "test:coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "prepublish": "npm run build",
     "prebuild": "rimraf dist es2015 coverage",
     "build": "tsc && rollup -c",
